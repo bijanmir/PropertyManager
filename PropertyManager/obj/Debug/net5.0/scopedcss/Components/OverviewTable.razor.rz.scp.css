@@ -1,0 +1,41 @@
+
+.greyGridTable[b-v4tk0dvk5k] {
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.greyGridTable td[b-v4tk0dvk5k], table.greyGridTable th[b-v4tk0dvk5k] {
+    border: 1px solid #FFFFFF;
+    padding: 3px 4px;
+}
+.greyGridTable tbody td[b-v4tk0dvk5k] {
+    font-size: 13px;
+}
+.greyGridTable td:nth-child(even)[b-v4tk0dvk5k] {
+    background: #EBEBEB;
+}
+.greyGridTable thead[b-v4tk0dvk5k] {
+    background: #FFFFFF;
+    border-bottom: 4px solid #333333;
+}
+.greyGridTable thead th[b-v4tk0dvk5k] {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    border-left: 2px solid #333333;
+}
+.greyGridTable thead th:first-child[b-v4tk0dvk5k] {
+    border-left: none;
+}
+
+.greyGridTable tfoot[b-v4tk0dvk5k] {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    border-top: 4px solid #333333;
+}
+.greyGridTable tfoot td[b-v4tk0dvk5k] {
+    font-size: 14px;
+}

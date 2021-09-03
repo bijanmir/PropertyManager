@@ -1,0 +1,27 @@
+﻿html, body{
+    font-family: proxima-nova,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+}
+
+.pie-chart{
+    min-width: 60%;
+    
+}
+
+.property-title{
+    text-align: center;   
+    padding: 20px 0 ;
+    letter-spacing: 0.5rem;
+}
+
+@media screen and (max-width: 625px){
+    .pie-chart{
+        width: 90%;
+    }
+}
