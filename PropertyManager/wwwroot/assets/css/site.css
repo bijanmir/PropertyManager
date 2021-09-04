@@ -20,6 +20,38 @@ h1, h2, h3{
     letter-spacing: 0.5rem;
 }
 
+.form-control{
+    margin: 10px;
+}
+
+/*
+Login Page
+*/
+
+.welcome-back{
+    text-align: center;
+}
+
+.welcome-back > .profile-img{
+    width: 30%;
+    margin-top:4rem;
+}
+
+.welcome{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 800;
+    letter-spacing: .1rem;
+    margin-bottom: 0;
+}
+
+.profile-img{
+    opacity: 0.2;
+}
+
+
+
+
+
 @media screen and (max-width: 625px){
     .pie-chart{
         width: 90%;

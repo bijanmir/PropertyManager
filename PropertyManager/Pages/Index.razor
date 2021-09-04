@@ -1,23 +1,17 @@
 ﻿@page "/"
 
-<PieChart></PieChart>
 <div class="container">
-    <hr><br>
-</div>
+    <div class="welcome-back">
+        <img class="profile-img" src="assets/images/profile-img.png" alt="">
+        <h2 class="welcome">Welcome Back</h2>
+        <subtitle>Sign in to Continue</subtitle>
+    </div>
 
-<div class="container">
-    <MaintenancePreview CardSection="Maintenance"
-                        Address="477 Market St, San Diego CA 92119"
-                        MaintenanceIssue="Lightbulb Fixture"
-                        HomeImage="/assets/images/home1.png">
-        
-    </MaintenancePreview>
-    
-    <MaintenancePreview CardSection="Maintenance"
-                        Address="955 Apple St, San Diego CA 92108"
-                        MaintenanceIssue="Broken wall"
-                        HomeImage="/assets/images/home1.png">
-        
-    </MaintenancePreview>
-</div>
 
+    <div class="form-row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Email">
+            <input type="text" class="form-control" placeholder="Password">
+        </div>
+    </div>
+</div>
