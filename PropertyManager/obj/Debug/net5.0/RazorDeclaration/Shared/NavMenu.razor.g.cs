@@ -97,7 +97,7 @@ using PropertyManager.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\Shared\NavMenu.razor"
+#line 34 "C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

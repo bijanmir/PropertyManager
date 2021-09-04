@@ -54,11 +54,6 @@
     font-size: 14px;
 }
 /* _content/PropertyManager/Components/PieChart.razor.rz.scp.css */
-.property-title[b-um2lex6ikz]{
-    margin-top: 1rem;
-    letter-spacing: 3px;
-}
-
 .pie-chart[b-um2lex6ikz]{
     width: 100%;
 }
@@ -87,10 +82,12 @@
 }
 
 .sidebar[b-p0qfdt20ax] {
-    background: #f85032;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: #f85032;  !* fallback for old browsers *!*/
+    /*background: -webkit-linear-gradient(to right, #e73827, #f85032);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to right, #e73827, #f85032); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
 
+    background-image: linear-gradient(
+            -25deg, #22E1FF 5%, #1D8FE1 45%, #625EB1 118%);
 }
 
 .top-row[b-p0qfdt20ax] {
@@ -172,7 +169,18 @@
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
+    color: #2c2c30;
 }
+
+.badge[b-z52aacjh8w]{
+    font-size: 1rem;
+    background-color: gold;
+    color: black;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+
 
 .nav-item[b-z52aacjh8w] {
     font-size: 0.9rem;

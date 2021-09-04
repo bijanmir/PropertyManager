@@ -14,10 +14,9 @@ h1, h2, h3{
     
 }
 
-.property-title{
-    text-align: center;   
-    padding: 20px 0 ;
-    letter-spacing: 0.5rem;
+/*Utilities*/
+.center{
+    text-align: center;
 }
 
 
@@ -84,9 +83,6 @@ input.form-control:focus{
     color: #29b86c;
 }
 
-.subtitle-login > a:hover{
-    font-weight: bold;
-}
 
 .title-area{
     margin: 55px auto;

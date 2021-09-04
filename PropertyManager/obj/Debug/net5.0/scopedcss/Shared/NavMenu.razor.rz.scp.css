@@ -20,7 +20,18 @@
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
+    color: #2c2c30;
 }
+
+.badge[b-z52aacjh8w]{
+    font-size: 1rem;
+    background-color: gold;
+    color: black;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+
 
 .nav-item[b-z52aacjh8w] {
     font-size: 0.9rem;
