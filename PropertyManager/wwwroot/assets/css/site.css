@@ -20,9 +20,7 @@ h1, h2, h3{
     letter-spacing: 0.5rem;
 }
 
-.form-control{
-    margin: 10px;
-}
+
 
 /*
 Login Page
@@ -30,17 +28,17 @@ Login Page
 
 .welcome-back{
     text-align: center;
+    margin-bottom: 20%;
 }
 
 .welcome-back > .profile-img{
     width: 30%;
-    margin-top:4rem;
+    margin-top:100px;
 }
 
 .welcome{
-    font-family: proxima-nova, sans-serif;
+    font-family: "Arial Black", serif;
     font-weight: 800;
-    letter-spacing: .1rem;
     margin-bottom: 0;
 }
 
@@ -48,7 +46,39 @@ Login Page
     opacity: 0.2;
 }
 
+.form-control{
+    margin-bottom: 20px;
+    width: 100%;
+}
 
+input.form-control:focus{
+    color: #29b86c;
+    font-weight: bold;
+}
+
+.forgot-password{
+    text-align: right;
+    color: #29b86c;
+    margin-bottom: 60px;
+}
+
+.login-btn{
+    width: 100%;
+    background-color: #29b86c;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.subtitle-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.subtitle-login{
+    padding: 0 20px;
+    font-size: 14px;;
+}
 
 
 
