@@ -70,3 +70,7 @@ C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Ra
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\scopedcss\Components\OverviewTable.razor.rz.scp.css
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\RazorDeclaration\Pages\Account.razor.g.cs
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Pages\Account.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\RazorDeclaration\Components\Login.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Components\Login.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\RazorDeclaration\Components\CreateAccount.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Components\CreateAccount.razor.g.cs

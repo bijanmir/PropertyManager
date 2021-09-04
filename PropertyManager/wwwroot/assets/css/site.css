@@ -80,10 +80,45 @@ input.form-control:focus{
     font-size: 14px;;
 }
 
+.subtitle-login > a{
+    color: #29b86c;
+}
+
+.subtitle-login > a:hover{
+    font-weight: bold;
+}
+
+.title-area{
+    margin: 55px auto;
+    text-align: center;
+}
+
+.login-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    height: 100vh;
+}
+
+input:hover{
+    box-shadow: #29b86c 0 0 4px;
+}
 
 
 @media screen and (max-width: 625px){
     .pie-chart{
         width: 90%;
     }
+}
+
+/*
+Create New Account Page
+*/
+
+.fname{
+    padding: 0 20px 0 0;
+}
+.lname{
+    padding: 0;
 }
