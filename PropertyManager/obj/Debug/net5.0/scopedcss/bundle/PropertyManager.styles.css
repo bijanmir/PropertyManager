@@ -68,6 +68,54 @@
         display: contents;
     }
 }
+/* _content/PropertyManager/Components/Statistics.razor.rz.scp.css */
+.card-2[b-rouy524053]{
+    display: flex;
+    flex-direction: column;
+    border: black 1px solid;
+    border-radius: 20px;
+    margin: 30px 20px 0 -2px;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.card-holder[b-rouy524053]{
+    display: inline-flex;
+    
+}
+/* _content/PropertyManager/Components/Weather.razor.rz.scp.css */
+.weather[b-0xltxtfqw5]{
+    width: 100%;
+    background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.weather-icon[b-0xltxtfqw5]{
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.weather-subtitle[b-0xltxtfqw5]{
+    color: #cbc8c8;
+    position: relative;
+    top: 20px;
+    text-shadow: #333333 0 0 10px;
+}
+
+.weather > .col-4[b-0xltxtfqw5]{
+    text-align: right;
+}
+
+.weather-status[b-0xltxtfqw5]{
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.weather-city[b-0xltxtfqw5]{
+    color: aliceblue;
+    font-weight: 700;
+}
 /* _content/PropertyManager/Shared/MainLayout.razor.rz.scp.css */
 .page[b-p0qfdt20ax] {
     position: relative;

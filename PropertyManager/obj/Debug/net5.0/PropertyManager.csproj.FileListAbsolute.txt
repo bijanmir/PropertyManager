@@ -72,3 +72,9 @@ C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Ra
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Components\Login.razor.g.cs
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\RazorDeclaration\Components\CreateAccount.razor.g.cs
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Components\CreateAccount.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\RazorDeclaration\Components\Weather.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Components\Weather.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\scopedcss\Components\Weather.razor.rz.scp.css
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\RazorDeclaration\Components\Statistics.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Components\Statistics.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\scopedcss\Components\Statistics.razor.rz.scp.css
