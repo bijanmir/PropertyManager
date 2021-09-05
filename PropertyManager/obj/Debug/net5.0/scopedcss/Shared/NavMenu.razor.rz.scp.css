@@ -1,21 +1,21 @@
-.navbar-toggler[b-z52aacjh8w] {
+.navbar-toggler[b-1jd85w29w3] {
     background-color: rgba(255, 255, 255, 0.1);
     margin-right: 10px;
 }
 
-.top-row[b-z52aacjh8w] {
+.top-row[b-1jd85w29w3] {
     height: 3.5rem;
     background-color: #2c2c30;
 ;
 
 }
 
-.navbar-brand[b-z52aacjh8w] {
+.navbar-brand[b-1jd85w29w3] {
     font-size: 1.1rem;
     margin: 0 auto;
 }
 
-.oi[b-z52aacjh8w] {
+.oi[b-1jd85w29w3] {
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
@@ -23,7 +23,7 @@
     color: #2c2c30;
 }
 
-.badge[b-z52aacjh8w]{
+.badge[b-1jd85w29w3]{
     font-size: 1rem;
     background-color: gold;
     color: black;
@@ -33,20 +33,20 @@
 
 
 
-.nav-item[b-z52aacjh8w] {
+.nav-item[b-1jd85w29w3] {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-z52aacjh8w] {
+    .nav-item:first-of-type[b-1jd85w29w3] {
         padding-top: 1rem;
     }
 
-    .nav-item:last-of-type[b-z52aacjh8w] {
+    .nav-item:last-of-type[b-1jd85w29w3] {
         padding-bottom: 1rem;
     }
 
-    .nav-item[b-z52aacjh8w]  a {
+    .nav-item[b-1jd85w29w3]  a {
         color: #d7d7d7;
         border-radius: 4px;
         height: 3rem;
@@ -55,22 +55,22 @@
         line-height: 3rem;
     }
 
-.nav-item[b-z52aacjh8w]  a.active {
+.nav-item[b-1jd85w29w3]  a.active {
     background-color: rgba(255,255,255,0.25);
     color: white;
 }
 
-.nav-item[b-z52aacjh8w]  a:hover {
+.nav-item[b-1jd85w29w3]  a:hover {
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
 
 @media (min-width: 641px) {
-    .navbar-toggler[b-z52aacjh8w] {
+    .navbar-toggler[b-1jd85w29w3] {
         display: none;
     }
 
-    .collapse[b-z52aacjh8w] {
+    .collapse[b-1jd85w29w3] {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }

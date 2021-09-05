@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G+BsDTouFwGAXDhoez+oakTi01Nlw83kqo2IinTQb9cS94221vDYnVKOFJb2wf5LmOFRG41BN8DD5BpGqupGxQ==",
+  "dgSpecHash": "rgAzH2VYpmx/Z2x1jAmmPYUBSUN1fX0ZtCSSGgXjPcFUHUpMdNSVbQyNHZ5BOf4xAtR2XZOCTNiPJeOE5VNi7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bibia\\RiderProjects\\PropertyManager\\PropertyManager\\PropertyManager.csproj",
+  "projectFilePath": "/Users/bijan/RiderProjects/PropertyManager/PropertyManager/PropertyManager.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

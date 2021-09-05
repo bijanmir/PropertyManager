@@ -1,32 +1,32 @@
-.weather[b-0xltxtfqw5]{
+.weather[b-bi9bwyj51b]{
     width: 100%;
     background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
     border-radius: 20px;
     padding: 20px;
 }
 
-.weather-icon[b-0xltxtfqw5]{
+.weather-icon[b-bi9bwyj51b]{
     width: 40px;
     margin-bottom: 10px;
 }
 
-.weather-subtitle[b-0xltxtfqw5]{
+.weather-subtitle[b-bi9bwyj51b]{
     color: #cbc8c8;
     position: relative;
     top: 20px;
     text-shadow: #333333 0 0 10px;
 }
 
-.weather > .col-4[b-0xltxtfqw5]{
+.weather > .col-4[b-bi9bwyj51b]{
     text-align: right;
 }
 
-.weather-status[b-0xltxtfqw5]{
+.weather-status[b-bi9bwyj51b]{
     color: aliceblue;
     font-weight: 700;
 }
 
-.weather-city[b-0xltxtfqw5]{
+.weather-city[b-bi9bwyj51b]{
     color: aliceblue;
     font-weight: 700;
 }
