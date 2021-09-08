@@ -1,14 +1,1 @@
-﻿.card-2{
-    display: flex;
-    flex-direction: column;
-    border: black 1px solid;
-    border-radius: 20px;
-    margin: 30px 20px 0 -2px;
-    padding: 20px;
-    min-height: 200px;
-}
-
-.card-holder{
-    display: inline-flex;
-    
-}
+﻿
