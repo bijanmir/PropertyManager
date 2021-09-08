@@ -8,24 +8,34 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/Users/bijan/.nuget/packages/": {}
+    "C:\\Users\\bibia\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bijan/RiderProjects/PropertyManager/PropertyManager/PropertyManager.csproj",
+      "projectUniqueName": "C:\\Users\\bibia\\RiderProjects\\PropertyManager\\PropertyManager\\PropertyManager.csproj",
       "projectName": "PropertyManager",
-      "projectPath": "/Users/bijan/RiderProjects/PropertyManager/PropertyManager/PropertyManager.csproj",
-      "packagesPath": "/Users/bijan/.nuget/packages/",
-      "outputPath": "/Users/bijan/RiderProjects/PropertyManager/PropertyManager/obj/",
+      "projectPath": "C:\\Users\\bibia\\RiderProjects\\PropertyManager\\PropertyManager\\PropertyManager.csproj",
+      "packagesPath": "C:\\Users\\bibia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bibia\\RiderProjects\\PropertyManager\\PropertyManager\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/bijan/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\bibia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +71,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

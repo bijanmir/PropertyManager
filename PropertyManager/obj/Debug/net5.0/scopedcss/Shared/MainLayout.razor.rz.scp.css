@@ -1,23 +1,22 @@
-.page[b-b9lp3a7z8o] {
+.page[b-p0qfdt20ax] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.main[b-b9lp3a7z8o] {
+.main[b-p0qfdt20ax] {
     flex: 1;
 }
 
-.sidebar[b-b9lp3a7z8o] {
+.sidebar[b-p0qfdt20ax] {
     /*background: #f85032;  !* fallback for old browsers *!*/
     /*background: -webkit-linear-gradient(to right, #e73827, #f85032);  !* Chrome 10-25, Safari 5.1-6 *!*/
     /*background: linear-gradient(to right, #e73827, #f85032); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
-
-    background-image: linear-gradient(
-            -25deg, #22E1FF 5%, #1D8FE1 45%, #625EB1 118%);
+    
+    background-color: #ecf6f7;
 }
 
-.top-row[b-b9lp3a7z8o] {
+.top-row[b-p0qfdt20ax] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -26,49 +25,50 @@
     align-items: center;
 }
 
-    .top-row[b-b9lp3a7z8o]  a, .top-row .btn-link[b-b9lp3a7z8o] {
+    .top-row[b-p0qfdt20ax]  a, .top-row .btn-link[b-p0qfdt20ax] {
         white-space: nowrap;
         margin-left: 1.5rem;
     }
 
-    .top-row a:first-child[b-b9lp3a7z8o] {
+    .top-row a:first-child[b-p0qfdt20ax] {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
-@media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-b9lp3a7z8o] {
+@media screen and (max-width: 624px) {
+    .top-row:not(.auth)[b-p0qfdt20ax] {
         display: none;
     }
 
-    .top-row.auth[b-b9lp3a7z8o] {
+    .top-row.auth[b-p0qfdt20ax] {
         justify-content: space-between;
     }
 
-    .top-row a[b-b9lp3a7z8o], .top-row .btn-link[b-b9lp3a7z8o] {
+    .top-row a[b-p0qfdt20ax], .top-row .btn-link[b-p0qfdt20ax] {
         margin-left: 0;
     }
+    
 }
 
 @media (min-width: 641px) {
-    .page[b-b9lp3a7z8o] {
+    .page[b-p0qfdt20ax] {
         flex-direction: row;
     }
 
-    .sidebar[b-b9lp3a7z8o] {
-        width: 250px;
+    .sidebar[b-p0qfdt20ax] {
+        min-width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
-    .top-row[b-b9lp3a7z8o] {
+    .top-row[b-p0qfdt20ax] {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .main > div[b-b9lp3a7z8o] {
+    .main > div[b-p0qfdt20ax] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }

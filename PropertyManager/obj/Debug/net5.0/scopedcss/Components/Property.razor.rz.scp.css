@@ -1,4 +1,4 @@
-.card[b-cvx855kcxx]{
+.card[b-lkzmr6wuyx]{
     display: inline-flex;
     margin: 20px 30px;
 }
@@ -6,7 +6,7 @@
 
 
 @media screen and (max-width: 641px) {
-    .card[b-cvx855kcxx]{
+    .card[b-lkzmr6wuyx]{
         display: contents;
     }
 }
