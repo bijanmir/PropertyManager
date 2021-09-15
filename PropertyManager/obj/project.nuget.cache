@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7O6ZXd4Usxlef4Ay725PfdZA+WiyzYQc8+DA3muH2+qBdM+Yi5IYzWF96qqVL3pfYn5PTcXpjfqbVzGVIilsKQ==",
+  "dgSpecHash": "sRiemY9hk2k3SytMxAvlgHk2f54RuVbVNMCHMEEVyKM3RmBm9zUILmggzt3iisRwt/soltEhO4xSFmWVhPKGHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bibia\\RiderProjects\\PropertyManager\\PropertyManager\\PropertyManager.csproj",
+  "projectFilePath": "/home/kunikos/projects/crib/PropertyManager/PropertyManager/PropertyManager.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
