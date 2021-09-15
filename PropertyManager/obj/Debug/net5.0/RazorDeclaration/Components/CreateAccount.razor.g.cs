@@ -89,6 +89,13 @@ using PropertyManager.Components;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 12 "/home/kunikos/projects/crib/PropertyManager/PropertyManager/_Imports.razor"
+using PropertyManager.DataModel.Model;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/create-user")]
     public partial class CreateAccount : Microsoft.AspNetCore.Components.ComponentBase
     {

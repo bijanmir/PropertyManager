@@ -90,8 +90,8 @@ using PropertyManager.Components;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "/home/kunikos/projects/crib/PropertyManager/PropertyManager/Components/Property.razor"
-using PropertyManager.Models;
+#line 12 "/home/kunikos/projects/crib/PropertyManager/PropertyManager/_Imports.razor"
+using PropertyManager.DataModel.Model;
 
 #line default
 #line hidden
@@ -104,12 +104,12 @@ using PropertyManager.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 29 "/home/kunikos/projects/crib/PropertyManager/PropertyManager/Components/Property.razor"
+#line 28 "/home/kunikos/projects/crib/PropertyManager/PropertyManager/Components/Property.razor"
        
   
-   List<Models.Property> Properties { get; set; } = new List<Models.Property>()
+   List<PropertyManager.DataModel.Model.Property> Properties { get; set; } = new List<PropertyManager.DataModel.Model.Property>()
   {
-    new Models.Property(){Address = "1232 xyz st", Rent = 1250, Tenant = new Tenant()
+    new PropertyManager.DataModel.Model.Property(){Address = "1232 xyz st", Rent = 1250, Tenant = new Tenant()
             {
                 FirstName = "John",
                 LastName = "Doe",
@@ -117,7 +117,7 @@ using PropertyManager.Models;
                 Email = "jdoe@gmail.com",
                 PhoneNumber = "619-555-5555"
             }, },
-            new Models.Property(){Address = "4532 adfa way", Rent = 5000, Tenant = new Tenant()
+            new PropertyManager.DataModel.Model.Property(){Address = "4532 adfa way", Rent = 5000, Tenant = new Tenant()
             {
                 FirstName = "Sarah",
                 LastName = "Ming",
@@ -125,7 +125,7 @@ using PropertyManager.Models;
                 Email = "sming@gmail.com",
                 PhoneNumber = "619-555-5555"
             }, },
-            new Models.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
+            new PropertyManager.DataModel.Model.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
             {
                 FirstName = "Bugs",
                 LastName = "Bunny",
@@ -133,7 +133,7 @@ using PropertyManager.Models;
                 Email = "bb@gmail.com",
                 PhoneNumber = "619-555-5555"
             }, },  
-                new Models.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
+                new PropertyManager.DataModel.Model.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
             {
                 FirstName = "Bugs",
                 LastName = "Bunny",
@@ -141,7 +141,7 @@ using PropertyManager.Models;
                 Email = "bb@gmail.com",
                 PhoneNumber = "619-555-5555"
             }, },  
-                new Models.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
+                new PropertyManager.DataModel.Model.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
             {
                 FirstName = "Bugs",
                 LastName = "Bunny",
@@ -149,7 +149,7 @@ using PropertyManager.Models;
                 Email = "bb@gmail.com",
                 PhoneNumber = "619-555-5555"
             }, },  
-                new Models.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
+                new PropertyManager.DataModel.Model.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
             {
                 FirstName = "Bugs",
                 LastName = "Bunny",
@@ -157,7 +157,7 @@ using PropertyManager.Models;
                 Email = "bb@gmail.com",
                 PhoneNumber = "619-555-5555"
             }, },  
-                new Models.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
+                new PropertyManager.DataModel.Model.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
             {
                 FirstName = "Bugs",
                 LastName = "Bunny",

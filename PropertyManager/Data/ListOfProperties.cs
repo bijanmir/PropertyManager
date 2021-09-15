@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using PropertyManager.Models;
+using PropertyManager.DataModel.Model;
 
 namespace PropertyManager.Data
 {

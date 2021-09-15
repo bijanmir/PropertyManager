@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sRiemY9hk2k3SytMxAvlgHk2f54RuVbVNMCHMEEVyKM3RmBm9zUILmggzt3iisRwt/soltEhO4xSFmWVhPKGHA==",
+  "dgSpecHash": "AR2hDZpJakjMpm+L5TQCPyzVZppoQjUksKwD+pczaag7zTUcFraykzhFk6tnZDWTAvY/15ujne7lqiKCbrW4AQ==",
   "success": true,
   "projectFilePath": "/home/kunikos/projects/crib/PropertyManager/PropertyManager/PropertyManager.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/kunikos/.nuget/packages/system.net.http.json/5.0.0/system.net.http.json.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

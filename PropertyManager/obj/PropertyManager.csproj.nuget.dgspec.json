@@ -4,6 +4,116 @@
     "/home/kunikos/projects/crib/PropertyManager/PropertyManager/PropertyManager.csproj": {}
   },
   "projects": {
+    "/home/kunikos/projects/crib/PropertyManager/PropertyManager.DataModel/PropertyManager.DataModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kunikos/projects/crib/PropertyManager/PropertyManager.DataModel/PropertyManager.DataModel.csproj",
+        "projectName": "PropertyManager.DataModel",
+        "projectPath": "/home/kunikos/projects/crib/PropertyManager/PropertyManager.DataModel/PropertyManager.DataModel.csproj",
+        "packagesPath": "/home/kunikos/.nuget/packages/",
+        "outputPath": "/home/kunikos/projects/crib/PropertyManager/PropertyManager.DataModel/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kunikos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kunikos/projects/crib/PropertyManager/PropertyManager.Repo/PropertyManager.Repo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kunikos/projects/crib/PropertyManager/PropertyManager.Repo/PropertyManager.Repo.csproj",
+        "projectName": "PropertyManager.Repo",
+        "projectPath": "/home/kunikos/projects/crib/PropertyManager/PropertyManager.Repo/PropertyManager.Repo.csproj",
+        "packagesPath": "/home/kunikos/.nuget/packages/",
+        "outputPath": "/home/kunikos/projects/crib/PropertyManager/PropertyManager.Repo/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kunikos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/kunikos/projects/crib/PropertyManager/PropertyManager/PropertyManager.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +135,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/kunikos/projects/crib/PropertyManager/PropertyManager.DataModel/PropertyManager.DataModel.csproj": {
+                "projectPath": "/home/kunikos/projects/crib/PropertyManager/PropertyManager.DataModel/PropertyManager.DataModel.csproj"
+              },
+              "/home/kunikos/projects/crib/PropertyManager/PropertyManager.Repo/PropertyManager.Repo.csproj": {
+                "projectPath": "/home/kunikos/projects/crib/PropertyManager/PropertyManager.Repo/PropertyManager.Repo.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
