@@ -5,15 +5,17 @@
       <div class="card property-card" style="width: 18rem;">
         <img class="card-img-top" src="assets/images/home1.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">@property.Address</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">@property.StreetAddress</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
+        @*/
         <ul class="list-group list-group-flush">
           <li class="list-group-item">@property.Tenant.FirstName @property.Tenant.LastName</li>
           <li class="list-group-item">@property.Tenant.Email</li>
           <li class="list-group-item">Rent: $@property.Rent</li>
           
         </ul>
+        /*@
         <div class="card-body">
           <a href="#" class="card-link">Card link</a>
           <a href="#" class="card-link">Another link</a>
@@ -26,7 +28,8 @@
 
 
 @code {
-  
+    private List<PropertyManager.DataModel.Model.Property> Properties { get; set; } = new List<DataModel.Model.Property>();
+    /*
    List<PropertyManager.DataModel.Model.Property> Properties { get; set; } = new List<PropertyManager.DataModel.Model.Property>()
   {
     new PropertyManager.DataModel.Model.Property(){Address = "1232 xyz st", Rent = 1250, Tenant = new Tenant()
@@ -87,5 +90,7 @@
             }, },  
     
   };
+  
+  */
 
 }

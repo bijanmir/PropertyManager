@@ -77,7 +77,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/kunikos/projects/crib/PropertyManager/PropertyManager.DataModel/PropertyManager.DataModel.csproj": {
+                "projectPath": "/home/kunikos/projects/crib/PropertyManager/PropertyManager.DataModel/PropertyManager.DataModel.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

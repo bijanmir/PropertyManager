@@ -25,6 +25,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "PropertyManager.DataModel": "1.0.0",
           "System.Net.Http.Json": "5.0.0"
         },
         "compile": {

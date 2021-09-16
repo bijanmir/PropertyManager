@@ -5,9 +5,10 @@ namespace PropertyManager.Data
 {
     public class ListOfProperties
     {
+        /*
         public List<Property> Properties = new ()
         {
-            new Property(){Address = "1232 xyz st", Rent = 1250, Tenant = new Tenant()
+            new Property(){StreetAddress = "1232 xyz st", RentCost = 1250, Tenant = new Tenant()
             {
                 FirstName = "John",
                 LastName = "Doe",
@@ -33,5 +34,6 @@ namespace PropertyManager.Data
             }, },
             
         };
+        */
     }
 }
