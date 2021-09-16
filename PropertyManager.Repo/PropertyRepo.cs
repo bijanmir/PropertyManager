@@ -5,7 +5,7 @@ using PropertyManager.Repo.Interface;
 
 namespace PropertyManager.Repo
 {
-    public class PropertyRepo : IRepository
+    public class PropertyRepo : IPropertyRepo
     {
         private readonly IWebClient _webClient;
 

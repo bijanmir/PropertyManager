@@ -4,7 +4,7 @@ using PropertyManager.DataModel.Model;
 
 namespace PropertyManager.Repo.Interface
 {
-    public interface IRepository
+    public interface IPropertyRepo
     {
         public Task<IEnumerable<Property>> GetAsync();
         public Task<Property> GetByIdAsync(int id);

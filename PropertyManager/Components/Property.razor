@@ -28,7 +28,15 @@
 
 
 @code {
-    private List<PropertyManager.DataModel.Model.Property> Properties { get; set; } = new List<DataModel.Model.Property>();
+    private List<PropertyManager.DataModel.Model.Property> Properties { get; set; } = null;
+
+
+    protected override Task OnInitializedAsync()
+    {
+        Properties = 
+        return base.OnInitializedAsync();
+    }
+
     /*
    List<PropertyManager.DataModel.Model.Property> Properties { get; set; } = new List<PropertyManager.DataModel.Model.Property>()
   {
