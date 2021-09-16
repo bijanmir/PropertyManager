@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace PropertyManager.Repo.ApiClient
+namespace PropertyManager.Repo.Interface
 {
     public interface IWebClient
     {

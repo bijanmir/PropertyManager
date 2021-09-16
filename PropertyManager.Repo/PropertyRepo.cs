@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using PropertyManager.DataModel.Model;
-using PropertyManager.Repo.ApiClient;
+using PropertyManager.Repo.Interface;
 
 namespace PropertyManager.Repo
 {
-    public class PropertyRepo
+    public class PropertyRepo : IRepository
     {
         private readonly IWebClient _webClient;
 
