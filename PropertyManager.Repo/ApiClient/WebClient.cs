@@ -1,3 +1,4 @@
+using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
@@ -23,6 +24,9 @@ namespace PropertyManager.Repo.ApiClient
         
         public async Task<T> InvokeGetAsync<T>(string uri)
         {
+            //HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, GetUrl(uri));
+            
+            
             return await _httpClient.GetFromJsonAsync<T>(GetUrl(uri));
         }
 

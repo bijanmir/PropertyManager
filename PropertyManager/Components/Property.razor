@@ -1,104 +1,41 @@
-﻿
+﻿@using PropertyManager.Repo.Interface
+@using System.Net.Http.Json
+
+
+
+@inject IPropertyRepo PropRepo;
+@inject IHttpClientFactory _clientFactory;
 <div class="card-box">
-    @foreach (var property in Properties)
+    @if (Properties != null)
     {
-      <div class="card property-card" style="width: 18rem;">
-        <img class="card-img-top" src="assets/images/home1.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">@property.StreetAddress</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        @*/
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">@property.Tenant.FirstName @property.Tenant.LastName</li>
-          <li class="list-group-item">@property.Tenant.Email</li>
-          <li class="list-group-item">Rent: $@property.Rent</li>
-          
-        </ul>
-        /*@
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
+        @foreach (var property in Properties)
+        {
+            <div class="card property-card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/images/home1.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@property.StreetAddress</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        }
     }
 </div>
 
 
-
-
 @code {
-    private List<PropertyManager.DataModel.Model.Property> Properties { get; set; } = null;
+    private IEnumerable<PropertyManager.DataModel.Model.Property> Properties { get; set; } = null;
+    private string _errorString = string.Empty;
 
 
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
-        Properties = 
-        return base.OnInitializedAsync();
-    }
+        Properties = await PropRepo.GetAsync();
 
-    /*
-   List<PropertyManager.DataModel.Model.Property> Properties { get; set; } = new List<PropertyManager.DataModel.Model.Property>()
-  {
-    new PropertyManager.DataModel.Model.Property(){Address = "1232 xyz st", Rent = 1250, Tenant = new Tenant()
-            {
-                FirstName = "John",
-                LastName = "Doe",
-                BirthDate = "11/1/1989",
-                Email = "jdoe@gmail.com",
-                PhoneNumber = "619-555-5555"
-            }, },
-            new PropertyManager.DataModel.Model.Property(){Address = "4532 adfa way", Rent = 5000, Tenant = new Tenant()
-            {
-                FirstName = "Sarah",
-                LastName = "Ming",
-                BirthDate = "11/1/1989",
-                Email = "sming@gmail.com",
-                PhoneNumber = "619-555-5555"
-            }, },
-            new PropertyManager.DataModel.Model.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
-            {
-                FirstName = "Bugs",
-                LastName = "Bunny",
-                BirthDate = "12/1/1989",
-                Email = "bb@gmail.com",
-                PhoneNumber = "619-555-5555"
-            }, },  
-                new PropertyManager.DataModel.Model.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
-            {
-                FirstName = "Bugs",
-                LastName = "Bunny",
-                BirthDate = "12/1/1989",
-                Email = "bb@gmail.com",
-                PhoneNumber = "619-555-5555"
-            }, },  
-                new PropertyManager.DataModel.Model.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
-            {
-                FirstName = "Bugs",
-                LastName = "Bunny",
-                BirthDate = "12/1/1989",
-                Email = "bb@gmail.com",
-                PhoneNumber = "619-555-5555"
-            }, },  
-                new PropertyManager.DataModel.Model.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
-            {
-                FirstName = "Bugs",
-                LastName = "Bunny",
-                BirthDate = "12/1/1989",
-                Email = "bb@gmail.com",
-                PhoneNumber = "619-555-5555"
-            }, },  
-                new PropertyManager.DataModel.Model.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
-            {
-                FirstName = "Bugs",
-                LastName = "Bunny",
-                BirthDate = "12/1/1989",
-                Email = "bb@gmail.com",
-                PhoneNumber = "619-555-5555"
-            }, },  
-    
-  };
-  
-  */
+    }
 
 }

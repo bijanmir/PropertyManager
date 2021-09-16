@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
@@ -10,6 +11,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PropertyManager.Data;
+using PropertyManager.Repo;
+using PropertyManager.Repo.ApiClient;
+using PropertyManager.Repo.Interface;
+using PropertyManager.Services;
 
 namespace PropertyManager
 {
@@ -28,7 +33,11 @@ namespace PropertyManager
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            
+
+            services.AddSingleton<IWebClient>(sp => new WebClient("http://68.101.181.58:5002", new HttpClient()));
+            services.AddTransient<IPropertyRepo, PropertyRepo>();
+            services.AddTransient<PropertyService>();
+            services.AddHttpClient();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
