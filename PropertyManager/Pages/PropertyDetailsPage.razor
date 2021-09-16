@@ -1,17 +1,51 @@
 ﻿@page "/properties/{Id:int}"
+@using System.ComponentModel
 
 @inject PropertyService _propertyService
 
 
 @if (Property != null)
 {
-    <h2> @Property.StreetAddress</h2>
-    <h2> @Property.State</h2>
-} 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="property-image">
+                    <img src="assets/images/home1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form">
+                <div class="row">
+                    <div class="col">
+                        <label for="address">Address:</label>
+                        <input disabled="No Can Use" type="text" id="address" value="@Property.StreetAddress">
+                    </div>
+                    <div class="col">
+                        <label for="city">City::</label>
+                        <input type="text" id="city" value="@Property.City">
+                    </div>
+                    <div class="col">
+                        <label for="state">State:</label>
+                        <input type="text" id="state" value="@Property.State">
+                    </div>
+                    <div class="col">
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" value="@Property.ZipCode">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+}
 
 @code {
+
     [Parameter]
     public int Id { get; set; }
+
     public DataModel.Model.Property Property { get; set; }
 
     protected override async Task OnInitializedAsync()

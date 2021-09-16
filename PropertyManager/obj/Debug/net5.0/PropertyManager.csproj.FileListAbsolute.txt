@@ -90,3 +90,4 @@ C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Pr
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\PropertyManager.genruntimeconfig.cache
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\RazorDeclaration\Pages\PropertyDetailsPage.razor.g.cs
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Pages\PropertyDetailsPage.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\scopedcss\Pages\PropertyDetailsPage.razor.rz.scp.css

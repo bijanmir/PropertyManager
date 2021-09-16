@@ -1,0 +1,15 @@
+﻿.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.col{
+    display: flex;
+    justify-content: space-around;
+}
+
+.property-image img{
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 40px;
+}
