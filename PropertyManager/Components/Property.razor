@@ -3,7 +3,7 @@
 
 
 
-@inject IPropertyRepo PropRepo;
+@inject PropertyService _propertyService;
 @inject IHttpClientFactory _clientFactory;
 <div class="card-box">
     @if (Properties != null)
@@ -34,7 +34,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        Properties = await PropRepo.GetAsync();
+        Properties = await _propertyService.ViewPropertiesAsync();
 
     }
 
