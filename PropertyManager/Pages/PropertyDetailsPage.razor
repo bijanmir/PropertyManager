@@ -1,0 +1,22 @@
+﻿@page "/properties/{Id:int}"
+
+@inject PropertyService _propertyService
+
+
+@if (Property != null)
+{
+    <h2> @Property.StreetAddress</h2>
+    <h2> @Property.State</h2>
+} 
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    public DataModel.Model.Property Property { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Property = await _propertyService.ViewPropertyAsync(Id);
+    }
+
+}
