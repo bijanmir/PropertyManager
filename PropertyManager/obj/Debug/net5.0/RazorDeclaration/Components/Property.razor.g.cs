@@ -104,69 +104,89 @@ using PropertyManager.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 29 "C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\Components\Property.razor"
+#line 30 "C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\Components\Property.razor"
        
-  
-   List<Models.Property> Properties { get; set; } = new List<Models.Property>()
-  {
-    new Models.Property(){Address = "1232 xyz st", Rent = 1250, Tenant = new Tenant()
+
+    List<Models.Property> Properties { get; set; } = new List<Models.Property>()
+    {
+        new Models.Property()
+        {
+            Address = "1232 xyz st", Rent = 1250, Tenant = new Tenant()
             {
                 FirstName = "John",
                 LastName = "Doe",
                 BirthDate = "11/1/1989",
                 Email = "jdoe@gmail.com",
                 PhoneNumber = "619-555-5555"
-            }, },
-            new Models.Property(){Address = "4532 adfa way", Rent = 5000, Tenant = new Tenant()
+            },
+        },
+        new Models.Property()
+        {
+            Address = "4532 adfa way", Rent = 5000, Tenant = new Tenant()
             {
                 FirstName = "Sarah",
                 LastName = "Ming",
                 BirthDate = "11/1/1989",
                 Email = "sming@gmail.com",
                 PhoneNumber = "619-555-5555"
-            }, },
-            new Models.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
+            },
+        },
+        new Models.Property()
+        {
+            Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
             {
                 FirstName = "Bugs",
                 LastName = "Bunny",
                 BirthDate = "12/1/1989",
                 Email = "bb@gmail.com",
                 PhoneNumber = "619-555-5555"
-            }, },  
-                new Models.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
+            },
+        },
+        new Models.Property()
+        {
+            Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
             {
                 FirstName = "Bugs",
                 LastName = "Bunny",
                 BirthDate = "12/1/1989",
                 Email = "bb@gmail.com",
                 PhoneNumber = "619-555-5555"
-            }, },  
-                new Models.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
+            },
+        },
+        new Models.Property()
+        {
+            Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
             {
                 FirstName = "Bugs",
                 LastName = "Bunny",
                 BirthDate = "12/1/1989",
                 Email = "bb@gmail.com",
                 PhoneNumber = "619-555-5555"
-            }, },  
-                new Models.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
+            },
+        },
+        new Models.Property()
+        {
+            Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
             {
                 FirstName = "Bugs",
                 LastName = "Bunny",
                 BirthDate = "12/1/1989",
                 Email = "bb@gmail.com",
                 PhoneNumber = "619-555-5555"
-            }, },  
-                new Models.Property(){Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
+            },
+        },
+        new Models.Property()
+        {
+            Address = "3333 aadde st", Rent = 4000, Tenant = new Tenant()
             {
                 FirstName = "Bugs",
                 LastName = "Bunny",
                 BirthDate = "12/1/1989",
                 Email = "bb@gmail.com",
                 PhoneNumber = "619-555-5555"
-            }, },  
-    
-  };
+            },
+        },
+    };
 
 
 #line default

@@ -82,3 +82,6 @@ C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Ra
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Pages\Tickets.razor.g.cs
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\RazorDeclaration\Pages\Tenants.razor.g.cs
 C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Pages\Tenants.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\RazorDeclaration\Components\Greeting.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\Razor\Components\Greeting.razor.g.cs
+C:\Users\bibia\RiderProjects\PropertyManager\PropertyManager\obj\Debug\net5.0\scopedcss\Components\Greeting.razor.rz.scp.css
