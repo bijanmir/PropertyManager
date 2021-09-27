@@ -5,7 +5,16 @@
 
 .col{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+label{
+    font-weight: bold;
+}
+
+.col input{
+    width: 70%;
+    border: none;
 }
 
 .property-image img{
