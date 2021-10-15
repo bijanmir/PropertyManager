@@ -24,9 +24,6 @@ namespace PropertyManager.Repo.ApiClient
         
         public async Task<T> InvokeGetAsync<T>(string uri)
         {
-            //HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, GetUrl(uri));
-            
-            
             return await _httpClient.GetFromJsonAsync<T>(GetUrl(uri));
         }
 

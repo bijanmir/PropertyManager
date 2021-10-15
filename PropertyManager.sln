@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyManager.DataModel",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyManager.Services", "PropertyManager.Services\PropertyManager.Services.csproj", "{5A033E19-E79D-462F-936E-1885FE185871}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropMan.DataStore", "PropMan.DataStore\PropMan.DataStore.csproj", "{44646071-1A89-4892-BB26-B1F5A5261C8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropMan.WebAPI", "PropMan.WebAPI\PropMan.WebAPI.csproj", "{A1D84CBE-A326-40AC-9A75-0C458C074CC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{5A033E19-E79D-462F-936E-1885FE185871}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A033E19-E79D-462F-936E-1885FE185871}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A033E19-E79D-462F-936E-1885FE185871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44646071-1A89-4892-BB26-B1F5A5261C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44646071-1A89-4892-BB26-B1F5A5261C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44646071-1A89-4892-BB26-B1F5A5261C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44646071-1A89-4892-BB26-B1F5A5261C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D84CBE-A326-40AC-9A75-0C458C074CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D84CBE-A326-40AC-9A75-0C458C074CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D84CBE-A326-40AC-9A75-0C458C074CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D84CBE-A326-40AC-9A75-0C458C074CC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
