@@ -12,9 +12,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using PropMan.DataStore.Data;
+using PropertyManager.DataStore.Data;
 
-namespace PropMan.WebAPI
+namespace PropertyManager.WebAPI
 {
     public class Startup
     {
@@ -31,7 +31,7 @@ namespace PropMan.WebAPI
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "PropMan.WebAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "PropertyManager.WebAPI", Version = "v1" });
             });
 
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -55,7 +55,7 @@ namespace PropMan.WebAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PropMan.WebAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PropertyManager.WebAPI v1"));
             }
 
             //app.UseHttpsRedirection();

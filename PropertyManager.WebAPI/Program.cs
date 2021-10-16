@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace PropMan.WebAPI
+namespace PropertyManager.WebAPI
 {
     public class Program
     {

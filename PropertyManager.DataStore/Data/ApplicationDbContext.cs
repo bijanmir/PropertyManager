@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PropertyManager.DataModel.Model;
 
-namespace PropMan.DataStore.Data
+namespace PropertyManager.DataStore.Data
 {
     public class ApplicationDbContext : DbContext
     {

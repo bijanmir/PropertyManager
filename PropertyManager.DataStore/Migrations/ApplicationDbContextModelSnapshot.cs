@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using PropMan.DataStore.Data;
+using PropertyManager.DataStore.Data;
 
-namespace PropMan.DataStore.Migrations
+namespace PropertyManager.DataStore.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot

@@ -2,9 +2,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PropertyManager.DataModel.Model;
-using PropMan.DataStore.Data;
+using PropertyManager.DataStore.Data;
 
-namespace PropMan.WebAPI.Controllers
+namespace PropertyManager.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

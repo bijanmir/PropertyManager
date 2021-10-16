@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PropMan.DataStore\PropMan.DataStore.csproj" />
+      <ProjectReference Include="..\PropertyManager.DataStore\PropertyManager.DataStore.csproj" />
     </ItemGroup>
 
 </Project>
