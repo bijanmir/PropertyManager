@@ -34,7 +34,7 @@ namespace PropertyManager
             services.AddRazorPages();
             services.AddServerSideBlazor();
 
-            services.AddSingleton<IWebClient>(sp => new WebClient("http://68.101.181.58:5002", new HttpClient()));
+            services.AddSingleton<IWebClient>(sp => new WebClient("http://propman.crib-tek.com:5000", new HttpClient()));
             services.AddTransient<IPropertyRepo, PropertyRepo>();
             services.AddTransient<PropertyService>();
             services.AddHttpClient();
@@ -54,7 +54,7 @@ namespace PropertyManager
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
