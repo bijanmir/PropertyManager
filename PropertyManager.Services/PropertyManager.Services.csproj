@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PropertyManager.DataModel\PropertyManager.DataModel.csproj" />
+      <ProjectReference Include="..\PropertyManager.Repo\PropertyManager.Repo.csproj" />
+    </ItemGroup>
+
+</Project>
