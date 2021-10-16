@@ -11,7 +11,7 @@ namespace PropMan.DataStore.Migrations
                 name: "property",
                 columns: table => new
                 {
-                    property_id = table.Column<int>(type: "integer", nullable: false)
+                    prop_id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     street_address = table.Column<string>(type: "text", nullable: true),
                     city = table.Column<string>(type: "text", nullable: true),
@@ -21,7 +21,7 @@ namespace PropMan.DataStore.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_property", x => x.property_id);
+                    table.PrimaryKey("PK_property", x => x.prop_id);
                 });
 
             migrationBuilder.CreateTable(
@@ -32,8 +32,8 @@ namespace PropMan.DataStore.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     first_name = table.Column<string>(type: "text", nullable: true),
                     last_name = table.Column<string>(type: "text", nullable: true),
-                    email = table.Column<string>(type: "text", nullable: true),
-                    phone_number = table.Column<string>(type: "text", nullable: true)
+                    phone_number = table.Column<string>(type: "text", nullable: true),
+                    email = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {

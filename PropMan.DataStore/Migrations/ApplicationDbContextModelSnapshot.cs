@@ -18,12 +18,12 @@ namespace PropMan.DataStore.Migrations
                 .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-            modelBuilder.Entity("PropMan.DataModel.Model.Property", b =>
+            modelBuilder.Entity("PropertyManager.DataModel.Model.Property", b =>
                 {
                     b.Property<int>("PropId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("property_id")
+                        .HasColumnName("prop_id")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("City")
@@ -51,7 +51,7 @@ namespace PropMan.DataStore.Migrations
                     b.ToTable("property");
                 });
 
-            modelBuilder.Entity("PropMan.DataModel.Model.Tenant", b =>
+            modelBuilder.Entity("PropertyManager.DataModel.Model.Tenant", b =>
                 {
                     b.Property<int>("TenantId")
                         .ValueGeneratedOnAdd()

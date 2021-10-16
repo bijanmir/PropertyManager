@@ -9,7 +9,7 @@ using PropMan.DataStore.Data;
 namespace PropMan.DataStore.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210916015936_InitialMigration")]
+    [Migration("20211016041209_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,12 +20,12 @@ namespace PropMan.DataStore.Migrations
                 .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-            modelBuilder.Entity("PropMan.DataModel.Model.Property", b =>
+            modelBuilder.Entity("PropertyManager.DataModel.Model.Property", b =>
                 {
                     b.Property<int>("PropId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("property_id")
+                        .HasColumnName("prop_id")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("City")
@@ -53,7 +53,7 @@ namespace PropMan.DataStore.Migrations
                     b.ToTable("property");
                 });
 
-            modelBuilder.Entity("PropMan.DataModel.Model.Tenant", b =>
+            modelBuilder.Entity("PropertyManager.DataModel.Model.Tenant", b =>
                 {
                     b.Property<int>("TenantId")
                         .ValueGeneratedOnAdd()
