@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace PropertyManager
+namespace PropertyManager.WebApp
 {
     public class Program
     {

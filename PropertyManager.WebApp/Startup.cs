@@ -10,13 +10,13 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PropertyManager.Data;
+using PropertyManager.WebApp.Data;
 using PropertyManager.Repo;
 using PropertyManager.Repo.ApiClient;
 using PropertyManager.Repo.Interface;
 using PropertyManager.Services;
 
-namespace PropertyManager
+namespace PropertyManager.WebApp
 {
     public class Startup
     {

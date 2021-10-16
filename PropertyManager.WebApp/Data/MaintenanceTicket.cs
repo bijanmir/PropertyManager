@@ -1,7 +1,7 @@
 ﻿using System;
 using PropertyManager.DataModel.Model;
 
-namespace PropertyManager.Data
+namespace PropertyManager.WebApp.Data
 {
     public class MaintenanceTicket
     {
