@@ -59,6 +59,11 @@ Login Page
     width: 100%;
 }
 
+input{
+    border-radius: 5px;
+    height: 2.9rem;
+}
+
 input.form-control:focus{
     color: #29b86c;
     font-weight: bold;
@@ -66,15 +71,46 @@ input.form-control:focus{
 
 .forgot-password{
     text-align: right;
-    color: #29b86c;
+    color: #65af6a;
     margin-bottom: 60px;
 }
 
 .login-btn{
     width: 100%;
-    background-color: #29b86c;
+    background-color: #65af6a;
     color: white;
     letter-spacing: 1px;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding:8px 0;
+    border: none;
+}
+
+.btn-link:hover{
+    color: #474038;
+    font-weight: bold;
+    box-shadow: #333333 1px 1px 5px;
+    
+}
+
+.btn-link{
+    width: 100%;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-top: .5rem;
+    border-radius: 5px;
+    padding: 8px 0;
+    border: none;
+}
+
+.sign-up-btn{
+    background-color: #333333;
+    color: white;
+}
+
+.sign-up-btn:hover{
+    color: #65af6a;
 }
 
 .subtitle-container{
@@ -101,21 +137,51 @@ input.form-control:focus{
 .login-area{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 350px;
-    height: 100vh;
+    max-width: 400px;
+    
 }
 
 input:hover{
-    box-shadow: #29b86c 0 0 4px;
+    border: #65af6a 2px solid;
 }
 
+.login-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
-@media screen and (max-width: 625px){
-    .pie-chart{
-        width: 90%;
+.login-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.login-logo > img{
+    transition: transform ease 2s;
+}
+
+.login-logo > img:hover{
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px){
+    .login-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
+    .login-area{
+        margin-top: 100px;
+        min-width: 240px;
+        position: relative;
+        left: -25px;
+    }
+    }
+
 
 /*
 Create New Account Page
