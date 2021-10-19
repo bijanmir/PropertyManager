@@ -27,7 +27,7 @@ namespace PropertyManager.WebAPI.Controllers
         [Route("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            Property prop = await _db.Properties.FindAsync(id);
+            var prop = await _db.Properties.FindAsync(id);
             if (prop == null) return NotFound();
 
             return Ok(prop);
@@ -59,12 +59,10 @@ namespace PropertyManager.WebAPI.Controllers
             }
             catch
             {
-                if (await _db.Properties.FindAsync(id) == null)
-                {
-                    return NotFound();
-                }
+                if (await _db.Properties.FindAsync(id) == null) return NotFound();
                 throw;
             }
+
             return NoContent();
         }
 
@@ -72,7 +70,7 @@ namespace PropertyManager.WebAPI.Controllers
         [Route("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            Property prop = await _db.Properties.FindAsync(id);
+            var prop = await _db.Properties.FindAsync(id);
             if (prop == null) return NotFound();
             await _db.SaveChangesAsync();
 

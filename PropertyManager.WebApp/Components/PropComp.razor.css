@@ -1,10 +1,10 @@
-﻿.card-box{
+﻿.card-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: row;
     max-width: 100%;
@@ -13,32 +13,33 @@
 
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0 2px 20px rgba(95, 82, 85, 0.8);
     cursor: pointer;
     transition: .3s ease-in;
-    
+
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: column;
 }
 
-.col-3{
-    width: 100%;
-}
-.col-9{
+.col-3 {
     width: 100%;
 }
 
-.property-attribute{
+.col-9 {
+    width: 100%;
+}
+
+.property-attribute {
     font-size: .8rem;
     margin: 0;
 }
 
-@media screen and (min-width: 768px){
-    .card{
+@media screen and (min-width: 768px) {
+    .card {
         max-width: 300px;
     }
 }

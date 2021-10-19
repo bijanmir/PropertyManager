@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using PropertyManager.DataModel.Model;
-
-namespace PropertyManager.WebApp.Data
+﻿namespace PropertyManager.WebApp.Data
 {
     public class ListOfProperties
     {

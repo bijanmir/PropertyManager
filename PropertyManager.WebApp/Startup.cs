@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -33,7 +27,8 @@ namespace PropertyManager.WebApp
             services.AddRazorPages();
             services.AddServerSideBlazor();
 
-            services.AddSingleton<IWebClient>(sp => new WebClient("http://propman.crib-tek.com:5000", new HttpClient()));
+            services.AddSingleton<IWebClient>(sp =>
+                new WebClient("http://propman.crib-tek.com:5000", new HttpClient()));
             services.AddTransient<IPropertyRepo, PropertyRepo>();
             services.AddTransient<PropertyService>();
             services.AddHttpClient();

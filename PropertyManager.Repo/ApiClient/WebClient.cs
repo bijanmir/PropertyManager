@@ -1,4 +1,3 @@
-using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
@@ -9,7 +8,6 @@ namespace PropertyManager.Repo.ApiClient
 {
     public class WebClient : IWebClient
     {
-
         private readonly string _baseUrl;
         private readonly HttpClient _httpClient;
 
@@ -17,11 +15,11 @@ namespace PropertyManager.Repo.ApiClient
         {
             _baseUrl = baseUrl;
             _httpClient = httpClient;
-            
+
             httpClient.DefaultRequestHeaders.Accept.Clear();
             httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
-        
+
         public async Task<T> InvokeGetAsync<T>(string uri)
         {
             return await _httpClient.GetFromJsonAsync<T>(GetUrl(uri));
@@ -29,21 +27,21 @@ namespace PropertyManager.Repo.ApiClient
 
         public async Task<T> InvokePostAsync<T>(string uri, T obj)
         {
-            HttpResponseMessage response = await _httpClient.PostAsJsonAsync(GetUrl(uri), obj);
+            var response = await _httpClient.PostAsJsonAsync(GetUrl(uri), obj);
             await HandleError(response);
-            
+
             return await response.Content.ReadFromJsonAsync<T>();
         }
 
         public async Task InvokePutAsync<T>(string uri, T obj)
         {
-            HttpResponseMessage response = await _httpClient.PutAsJsonAsync(GetUrl(uri), obj);
+            var response = await _httpClient.PutAsJsonAsync(GetUrl(uri), obj);
             await HandleError(response);
         }
 
         public async Task InvokeDeleteAsync(string uri)
         {
-            HttpResponseMessage response = await _httpClient.DeleteAsync(GetUrl(uri));
+            var response = await _httpClient.DeleteAsync(GetUrl(uri));
             await HandleError(response);
         }
 
@@ -56,7 +54,7 @@ namespace PropertyManager.Repo.ApiClient
         {
             if (!response.IsSuccessStatusCode)
             {
-                string error = await response.Content.ReadAsStringAsync();
+                var error = await response.Content.ReadAsStringAsync();
                 throw new HttpRequestException(error);
             }
         }

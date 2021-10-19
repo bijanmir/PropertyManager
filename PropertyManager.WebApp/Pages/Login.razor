@@ -1,23 +1,24 @@
 ﻿@layout LoginLayout
-@using Components.Html
 
 
 @page "/"
 
 <div class="login-section">
-    
+
     <div class="col-6 login-logo">
         <img class="" src="/assets/images/PropMan2.png" alt="">
     </div>
     <div class="col-6">
         <form class="login-area" action="">
-            
+
             <input id="username" type="text" placeholder="Username">
             <br>
             <input id="password" type="password" placeholder="Password">
-            
-            <button class="btn-link login-btn">SIGN IN</button>
-            <button class="btn-link sign-up-btn">SIGN UP</button>
+
+           <a href="#"> <button class="btn-link login-btn">SIGN IN</button></a>
+           <a href="create-user"> <button class="btn-link sign-up-btn">
+                                       SIGN UP
+                                   </button></a>
         </form>
     </div>
 </div>

@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using PropertyManager.DataModel.Model;
-using PropertyManager.Repo;
 using PropertyManager.Repo.Interface;
 
 namespace PropertyManager.Services

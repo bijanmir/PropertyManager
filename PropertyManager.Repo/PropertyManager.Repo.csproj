@@ -5,11 +5,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+        <PackageReference Include="System.Net.Http.Json" Version="5.0.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PropertyManager.DataModel\PropertyManager.DataModel.csproj" />
+        <ProjectReference Include="..\PropertyManager.DataModel\PropertyManager.DataModel.csproj"/>
     </ItemGroup>
 
 </Project>

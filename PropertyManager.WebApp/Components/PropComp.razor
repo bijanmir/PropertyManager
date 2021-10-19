@@ -1,9 +1,4 @@
-﻿@using PropertyManager.Repo.Interface
-@using System.Net.Http.Json
-
-
-
-@inject PropertyService _propertyService;
+﻿@inject PropertyService _propertyService;
 <div class="card-box">
     @if (Properties != null)
     {
@@ -15,7 +10,7 @@
                     <h5 class="card-title">@property.StreetAddress</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
-                
+
                 <div class="card-body">
                     <a href="#" class="card-link">Card link</a>
                     <a href="#" class="card-link">Another link</a>
@@ -27,14 +22,13 @@
 
 
 @code {
-    private IEnumerable<PropertyManager.DataModel.Model.Property> Properties { get; set; } = null;
+    private IEnumerable<Property> Properties { get; set; } = null;
     private string _errorString = string.Empty;
 
 
     protected override async Task OnInitializedAsync()
     {
         Properties = await _propertyService.ViewPropertiesAsync();
-
     }
 
 }

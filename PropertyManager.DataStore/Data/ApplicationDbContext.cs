@@ -7,7 +7,6 @@ namespace PropertyManager.DataStore.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            
         }
 
         public DbSet<Property> Properties { get; set; }

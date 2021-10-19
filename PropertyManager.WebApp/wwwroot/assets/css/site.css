@@ -1,81 +1,83 @@
 ﻿
-
-html, body{
-    font-family: proxima-nova,sans-serif;
+html, body {
+    font-family: proxima-nova, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-h1{
+h1 {
     font-weight: 700;
 }
 
-.pie-chart{
-    min-width: 60%;
-    
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+a:hover {
+    color: unset;
 }
 
 /*Utilities*/
-.center{
+.center {
     text-align: center;
 }
 
-.shadow{
+.shadow {
     box-shadow: 0 20px 27px 0 rgba(0 0 0 .5);
 }
-
 
 
 /*
 Login Page
 */
 
-.welcome-back{
+.welcome-back {
     text-align: center;
     margin-bottom: 20%;
 }
 
-.welcome-back > .profile-img{
+.welcome-back > .profile-img {
     width: 30%;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
-.welcome{
+.welcome {
     font-family: "Arial Black", serif;
     font-weight: 800;
     margin-bottom: 0;
 }
 
-.profile-img{
+.profile-img {
     opacity: 0.2;
 }
 
-.form-control{
+.form-control {
     margin-bottom: 20px;
     width: 100%;
 }
 
-input{
+input {
     border-radius: 5px;
     height: 2.9rem;
 }
 
-input.form-control:focus{
+input.form-control:focus {
     color: #29b86c;
     font-weight: bold;
 }
 
-.forgot-password{
+.forgot-password {
     text-align: right;
     color: #65af6a;
     margin-bottom: 60px;
 }
 
-.login-btn{
+.login-btn {
     width: 100%;
     background-color: #65af6a;
     color: white;
@@ -83,18 +85,18 @@ input.form-control:focus{
     text-decoration: none;
     margin-top: 1rem;
     border-radius: 5px;
-    padding:8px 0;
+    padding: 8px 0;
     border: none;
 }
 
-.btn-link:hover{
+.btn-link:hover {
     color: #474038;
     font-weight: bold;
     box-shadow: #333333 1px 1px 5px;
-    
+
 }
 
-.btn-link{
+.btn-link {
     width: 100%;
     letter-spacing: 1px;
     text-decoration: none;
@@ -104,48 +106,48 @@ input.form-control:focus{
     border: none;
 }
 
-.sign-up-btn{
+.sign-up-btn {
     background-color: #333333;
     color: white;
 }
 
-.sign-up-btn:hover{
+.sign-up-btn:hover {
     color: #65af6a;
 }
 
-.subtitle-container{
+.subtitle-container {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-.subtitle-login{
+.subtitle-login {
     padding: 0 20px;
     font-size: 14px;;
 }
 
-.subtitle-login > a{
+.subtitle-login > a {
     color: #29b86c;
 }
 
 
-.title-area{
+.title-area {
     margin: 55px auto;
     text-align: center;
 }
 
-.login-area{
+.login-area {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    
+
 }
 
-input:hover{
+input:hover {
     border: #65af6a 2px solid;
 }
 
-.login-section{
+.login-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,43 +156,46 @@ input:hover{
     margin: 0 auto;
 }
 
-.login-logo{
+.login-logo {
     display: flex;
     justify-content: center;
 }
 
-.login-logo > img{
+.login-logo > img {
     transition: transform ease 2s;
 }
 
-.login-logo > img:hover{
+.login-logo > img:hover {
     transition: transform 1s;
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px){
-    .login-section{
+
+@media screen and (max-width: 768px) {
+    .login-section {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .login-area{
+
+    .login-area {
         margin-top: 100px;
         min-width: 240px;
         position: relative;
         left: -25px;
     }
-    }
+}
 
 
 /*
 Create New Account Page
 */
 
-.fname{
+.fname {
     padding: 0 20px 0 0;
 }
-.lname{
+
+.lname {
     padding: 0;
 }
 
@@ -270,7 +275,7 @@ Account Overview Mini Cards
 }
 
 .text-gray-300 {
-    color: #dddfeb!important;
+    color: #dddfeb !important;
 }
 
 .font-weight-bold {
@@ -291,7 +296,7 @@ Account Overview Mini Cards
     margin-left: 0;
 }
 
-.no-gutters>.col, .no-gutters>[class*=col-] {
+.no-gutters > .col, .no-gutters > [class*=col-] {
     padding-right: 0;
     padding-left: 0;
 }
@@ -303,11 +308,11 @@ Account Overview Mini Cards
 }
 
 .border-left-warning {
-    border-left: .25rem solid #f6c23e!important;
+    border-left: .25rem solid #f6c23e !important;
 }
 
 .border-left-info {
-    border-left: .25rem solid #36b9cc!important;
+    border-left: .25rem solid #36b9cc !important;
 }
 
 .row {
@@ -316,11 +321,13 @@ Account Overview Mini Cards
 }
 
 .align-items-center {
-    align-items: center!important;
+    align-items: center !important;
 }
+
 .mr-2, .mx-2 {
-    margin-right: .5rem!important;
+    margin-right: .5rem !important;
 }
+
 *, ::after, ::before {
     box-sizing: border-box;
 }

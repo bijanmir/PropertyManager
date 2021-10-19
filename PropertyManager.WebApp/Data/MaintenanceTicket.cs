@@ -9,7 +9,5 @@ namespace PropertyManager.WebApp.Data
         public DateTime TimeSubmitted { get; set; }
         public string Urgency { get; set; }
         public Property Property { get; set; }
-
-        
     }
 }

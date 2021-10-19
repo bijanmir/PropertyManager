@@ -7,18 +7,24 @@
         <col-8>
             <h5 class="card-title">@Address</h5>
             <p class="card-text">@MaintenanceIssue</p>
-            <a href="#" class="btn btn-primary">View Ticket</a> 
+            <a href="#" class="btn btn-primary">View Ticket</a>
         </col-8>
-       
+
     </div>
 </div>
+
 @code {
+
     [Parameter]
     public string CardSection { get; set; }
+
     [Parameter]
-    public string Address{ get; set; }
+    public string Address { get; set; }
+
     [Parameter]
     public string MaintenanceIssue { get; set; }
+
     [Parameter]
     public string HomeImage { get; set; }
+
 }
