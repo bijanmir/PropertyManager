@@ -2,28 +2,34 @@
 @page "/create-user"
 
 
-<div class="login-section">
+<div class="sign-up-section">
 
-    <div class="col-6 login-logo">
+    <div class="col-6 sign-up-logo">
         <img class="" src="/assets/images/PropMan2.png" alt="">
     </div>
-    <div class="col-6">
-        <form class="login-area" action="">
-                            <input type="text" class="form-control" placeholder="First Name">
-                <input type="text" class="form-control" placeholder="Last Name">
-<input type="text" class="form-control" placeholder="📧 Email">
-            <input type="text" class="form-control" placeholder="📱  Phone">
-            <input type="password" class="form-control" placeholder="🔒 Password">
-            <input type="password" class="form-control" placeholder="Comfirm Password">
+    <div class="col-6 sign-up-section">
+        <div class="card shadow sign-up-container">
+            <h2 class="center py-4">Sign Up Form</h2>
 
-                           <a href="create-user"> <button class="btn-link sign-up-btn">
-                                SIGN UP
-                            </button></a>
-                            <div class="subtitle-container">
-                                        <p class="subtitle-login">Already have an account? <a href="/">Login</a></p>
-                                    </div>
-        </form>
-    </div>
+            <form class="form-row" action="">
+                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="Last Name">
+                <input type="text" class="form-control" placeholder="📧 Email">
+                <input type="text" class="form-control" placeholder="📱  Phone">
+                <input type="password" class="form-control" placeholder="🔒 Password">
+                <input type="password" class="form-control" placeholder="Comfirm Password">
+
+                <a href="create-user">
+                    <button class="btn-link sign-up-btn">
+                        SIGN UP
+                    </button></a>
+                <div class="subtitle-container">
+                    <p class="subtitle-login">Already have an account? <a href="/">Login</a></p>
+                </div>
+            </form>
+        </div>
+                
+            </div>
 </div>
 
 

@@ -57,19 +57,25 @@ Login Page
 }
 
 .form-control {
-    margin-bottom: 20px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 input {
     border-radius: 5px;
     height: 2.9rem;
+    border: 1px solid black;
 }
 
 input.form-control:focus {
     color: #29b86c;
     font-weight: bold;
 }
+
+input:hover {
+    border: #65af6a 2px solid;
+}
+
 
 .forgot-password {
     text-align: right;
@@ -136,24 +142,24 @@ input.form-control:focus {
     text-align: center;
 }
 
+.login-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90vh;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .login-area {
     display: flex;
     flex-direction: column;
+
+}
+
+.login-container{
+    padding: 20px;
     max-width: 400px;
-
-}
-
-input:hover {
-    border: #65af6a 2px solid;
-}
-
-.login-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    max-width: 1280px;
-    margin: 0 auto;
 }
 
 .login-logo {
@@ -170,19 +176,93 @@ input:hover {
     transform: scale(1.1);
 }
 
+.login-form{
+    max-width: 400px;
+}
 
-@media screen and (max-width: 768px) {
+/*Sign Up Section -Desktop*/
+
+.sign-up-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-width: 400px;
+}
+
+.sign-up-container{
+    margin: 55px 0 0 0px;
+    padding: 30px 100px;
+}
+
+.sign-up-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    /*LOGIN PAGE */
     .login-section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 500px;
     }
+    
 
     .login-area {
+        width: 80%;
         margin-top: 100px;
-        min-width: 240px;
-        position: relative;
-        left: -25px;
+    }
+    
+    .login-form{
+        max-width: 700px;
+    }
+    
+    .login-container{
+        max-width: unset;
+        padding: 20px;
+    }
+    
+    .login-logo > img{
+        width: 50%;
+        margin-top: 100px;
+    }
+    
+    .login-logo{
+        width: 100%;
+    }
+    
+    /*SIGN UP PAGE */
+    .sign-up-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+        margin: 0 auto;
+        min-width: 370px;
+        max-width: 400px;
+    }
+    
+    .sign-up-container{
+        margin: 55px 0 0 0px;
+        padding: 20px 20px 0px;
+    }
+    
+    .sign-up-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sign-up-logo > img{
+        max-width: 150px;
+        margin-top: 20px;
     }
 }
 
