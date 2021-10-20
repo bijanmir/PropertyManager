@@ -1,15 +1,29 @@
-﻿@page "/properties"
+﻿@page "/prop"
 
-<PropertyComponent Property="MyProp"></PropertyComponent>
+@inject IPropertyRepo PropRepo;
+
+<div class="row">
+    <div class="col-12 prop-container">
+        <h2>Properties</h2>
+    </div>
+</div>
+
+@if (@properties != null) {
+    foreach (var property in properties)
+    {
+        <PropertyComponent Property="@property"></PropertyComponent>
+    }
+}
+
+
 
 @code
 {
-    Property MyProp = new Property() 
-    { 
-        RentCost = 4000, 
-        City = "San Diego", 
-        State = "CA", 
-        PropId = 12, 
-        StreetAddress = "121 Market St", 
-        ZipCode = 82123 };
+    public IEnumerable<Property> properties { get; set; }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        properties = await PropRepo.GetAsync();
+    }
+
 }

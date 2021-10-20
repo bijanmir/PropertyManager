@@ -4,8 +4,6 @@
 }
 
 .top-row {
-    background-color: #2c2c30;;
-
 }
 
 .navbar-brand {
@@ -58,12 +56,13 @@
 }
 
 .nav-item ::deep a.active {
-    background-color: rgba(17, 170, 216, 0.9);
+    /*background-color: rgba(17, 170, 216, 0.9);*/
+    background-color: #65af6a;
     color: white;
 }
 
 .nav-item ::deep a:hover {
-    background-color: rgba(8, 30, 36, 0.5);
+    background-color: #65af6a;
     color: white;
 }
 

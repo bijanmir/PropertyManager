@@ -1,0 +1,27 @@
+﻿@page "/add"
+@using Microsoft.AspNetCore.Mvc.ModelBinding
+
+@inject IPropertyRepo _propertyRepo
+@inject NavigationManager NavigationManager
+
+<input type="text" placeholder="Street Address" @bind-value="@Property.StreetAddress" >
+<input type="text" placeholder="City" @bind-value="@Property.City">
+<input type="text" placeholder="State" @bind-value="@Property.State">
+<input type="number" placeholder="Zip Code" @bind-value="@Property.ZipCode">
+<input type="number" placeholder="Rent Cost" @bind-value="@Property.RentCost">
+
+<button @onclick="SendData">Add Me</button>
+
+@code {
+
+    private Property Property { get; set; } = new Property();
+
+    private async void SendData(MouseEventArgs e)
+    {
+       var prop_id = await _propertyRepo.CreateAsync(Property);
+        NavigationManager.NavigateTo($"p/{prop_id}");
+    }
+
+    
+
+}

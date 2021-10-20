@@ -1,0 +1,19 @@
+﻿@page "/prop/{Id:int}"
+@inject IPropertyRepo _propertyRepo
+
+
+
+<PropertyComponent Property="Property"></PropertyComponent>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Property Property { get; set; } = new Property();
+    
+    protected override async Task OnInitializedAsync()
+    {
+        Property = await _propertyRepo.GetByIdAsync(Id);
+    }
+
+}

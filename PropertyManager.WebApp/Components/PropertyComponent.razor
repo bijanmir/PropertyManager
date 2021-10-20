@@ -5,7 +5,7 @@
             <img class="property-image" src="assets/images/home1.png" alt="">
         </div>
         <div class="col-7 prop-details-container">
-            <h3 class="prop-rent">@Property.RentCost.ToString("C")</h3>
+            <h3 class="prop-rent">@((Property.RentCost/100).ToString("C"))</h3>
             <p class="prop-address">@Property.StreetAddress, <br/>@Property.City
                 @Property.State @Property.ZipCode</p>
         </div>
@@ -46,6 +46,7 @@
 
     [Parameter]
     public Property Property { get; set; }
+
 
 
 }
