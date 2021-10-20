@@ -1,8 +1,15 @@
 ﻿@page "/properties"
 
-<div class="container">
-    <h1 class="center py-4">Properties</h1>
-    <div>
-        <PropComp></PropComp>
-    </div>
-</div>
+<PropertyComponent Property="MyProp"></PropertyComponent>
+
+@code
+{
+    Property MyProp = new Property() 
+    { 
+        RentCost = 4000, 
+        City = "San Diego", 
+        State = "CA", 
+        PropId = 12, 
+        StreetAddress = "121 Market St", 
+        ZipCode = 82123 };
+}

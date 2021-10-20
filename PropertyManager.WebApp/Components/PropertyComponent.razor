@@ -1,0 +1,51 @@
+﻿@using System.Security.Principal
+<div class="card shadow main-property-container">
+    <div class="row property-row-1">
+        <div class="col-5">
+            <img class="property-image" src="assets/images/home1.png" alt="">
+        </div>
+        <div class="col-7 prop-details-container">
+            <h3 class="prop-rent">@Property.RentCost.ToString("C")</h3>
+            <p class="prop-address">@Property.StreetAddress, <br/>@Property.City
+                @Property.State @Property.ZipCode</p>
+        </div>
+    </div>
+    <div class="row prop-specs">
+        <div class="col-3 spec">
+            <span class="oi oi-home"></span>
+            <p>4</p>
+        </div>
+        <div class="col-3 spec">
+            <span class="oi oi-home"></span>
+            <p>4</p>
+        </div>
+        <div class="col-6 spec">
+            <span class="oi oi-home"></span>
+            <p> 4400 sq. ft</p>
+        </div>
+    </div>
+    <div class="row property-row-2">
+        <div class="col-4 prop-specs-2">
+            <h4>$12,510</h4>
+            <p>Balance Due</p>
+        </div>
+        <div class="col-4 prop-specs-2">
+            <h4>10/20/2021</h4>
+            <p>Rent Due On</p>
+        </div>
+        <div class="col-4 prop-specs-2">
+            <h4>01/01/2022</h4>
+            <p>Lease Expires</p>
+        </div>
+    </div>
+    <div class="row">
+    </div>
+</div>
+
+@code{
+
+    [Parameter]
+    public Property Property { get; set; }
+
+
+}
