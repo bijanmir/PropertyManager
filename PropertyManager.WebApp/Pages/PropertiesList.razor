@@ -3,17 +3,21 @@
 @inject IPropertyRepo PropRepo;
 
 <div class="row">
-    <div class="col-12 prop-container">
+    <div class="col-12">
         <h2>Properties</h2>
+        <div class="prop-container">
+            @if (@properties != null) {
+                          foreach (var property in properties)
+                          {
+                              <PropertyComponent Property="@property"></PropertyComponent>
+                          }
+                      }
+        </div>
     </div>
+    
 </div>
 
-@if (@properties != null) {
-    foreach (var property in properties)
-    {
-        <PropertyComponent Property="@property"></PropertyComponent>
-    }
-}
+
 
 
 
