@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Net.Http;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -16,6 +17,9 @@ namespace PropertyManager.WebApp
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            // This fixes the currency display issue for ToString("C") on MacBook where it shows ¤4.83 instead of $4.83
+            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+
         }
 
         public IConfiguration Configuration { get; }
